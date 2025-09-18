@@ -1,51 +1,46 @@
 name: Hot News Crawler
-
 on:
   schedule:
-    # 我们使用的是 github 官方提供的资源来进行的推送，而每个账号的资源是限额的，为了不被官方判定为滥用而面临封号的风险，不建议比半小时更低
-    - cron: "0 * * * *" # 每小时整点运行一次(实际有偏差) 或者 "*/30 * * * *" (每半小时执行一次) 或者 "*/30 0-14 * * *"(每天早上 8 点到晚上 10 点期间，每半小时运行一次)
-  workflow_dispatch:
-
+    # 中国时间每天上午8点运行 (UTC 0点 = 北京时间8点)
+    - cron: "0 0 * * *"
+    # 中国时间每天下午6点运行 (UTC 10点 = 北京时间18点)
+    - cron: "0 10 * * *"
+  workflow_dispatch: # 保留手动触发选项
 # 添加权限设置
 permissions:
   contents: write
-
 jobs:
   crawl:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
       - name: Verify required files
         run: |
           echo "🔍 检查必需的配置文件..."
-
           if [ ! -f config/config.yaml ]; then
             echo "❌ 错误: config/config.yaml 文件不存在"
             echo "请参考项目文档创建配置文件"
             exit 1
           fi
-
           if [ ! -f config/frequency_words.txt ]; then
-            echo "❌ 错误: config/frequency_words.txt 文件不存在"
+            echo "❌ 错误: config/frequency_words.txt 文件不存在" 
             echo "请参考项目文档创建频率词配置文件"
             exit 1
           fi
-
           echo "✅ 配置文件检查通过"
-
+      - name: Display current time
+        run: |
+          echo "当前UTC时间: $(date -u)"
+          echo "北京时间: $(TZ=Asia/Shanghai date)"
       - name: Run crawler
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
@@ -55,7 +50,6 @@ jobs:
           WEWORK_WEBHOOK_URL: ${{ secrets.WEWORK_WEBHOOK_URL }}
           GITHUB_ACTIONS: true
         run: python main.py
-
       - name: Commit and push if changes
         run: |
           git config --global user.name 'GitHub Actions'
