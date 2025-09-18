@@ -1,113 +1,34 @@
-胖东来
-于东来
+# 外贸核心业务
+外贸 B2B 跨境贸易 国际贸易 +出口 +进口
 
-DeepSeek
-梁文锋
+# 关税和政策
+关税 反倾销 贸易战 +政策 !预测
+WTO RCEP CPTPP 自贸区 +协议
 
-华为
-鸿蒙
-HarmonyOS
-任正非
+# 物流运输
+海运费 货代 集装箱 +涨价 +下跌
+马士基 中远海运 +运费 !广告
 
-比亚迪
-王传福
+# 外贸平台和电商
+阿里巴巴 Alibaba Made-in-China Global Sources +平台
+亚马逊 速卖通 eBay +跨境 +电商
 
-大疆
-DJI
+# 汇率和支付
+汇率 美元 人民币 +波动
+PayPal 西联汇款 +支付 !广告
 
-宇树
-王兴兴
+# AI工具核心
+人工智能 ChatGPT Claude DeepSeek +工具 +功能
+OpenAI Anthropic +更新 +发布
 
-智元
-灵犀
-稚晖君
-彭志辉
+# AI应用场景
+AI +客服 +翻译 +营销
+智能 +写作 +分析 !培训
 
-黑神话
-冯骥
+# 制造业相关
+OEM ODM 代工 +制造 +工厂
+供应链 +短缺 +恢复
 
-影之刃零
-梁其伟
-
-哪吒
-饺子
-杨宇
-!车
-!餐
-
-三体
-流浪地球
-刘慈欣
-郭帆
-
-申奥
-
-京东
-刘强东
-
-字节
-bytedance
-张一鸣
-
-特斯拉
-马斯克
-
-微软
-Microsoft
-
-英伟达
-NVIDIA
-黄仁勋
-
-AMD
-
-谷歌
-google
-gemini
-deepmind
-
-chatgpt
-openai
-sora
-
-claude
-Anthropic
-
-iphone
-ipad
-mac
-ios
-
-ai
-!gai
-人工智能
-
-自动驾驶
-
-机器人
-
-国产
-中国
-
-美国
-日本
-韩国
-
-芯片
-光刻机
-
-科技
-
-核能
-
-水电站
-雅鲁藏布江
-
-新质生产力
-
-月球
-登月
-火星
-宇宙
-飞船
-航空
+# 认证和合规
+CE认证 FDA ISO +认证 +标准
+验厂 合规 +要求
