@@ -1,34 +1,58 @@
-# 外贸核心业务
-外贸 B2B 跨境贸易 国际贸易 +出口 +进口
 
-# 关税和政策
-关税 反倾销 贸易战 +政策 !预测
-WTO RCEP CPTPP 自贸区 +协议
+外贸 
+B2B 
+跨境贸易 
+国际贸易 
+出口
+进口
 
-# 物流运输
-海运费 货代 集装箱 +涨价 +下跌
-马士基 中远海运 +运费 !广告
+关税和政策
+关税
+反倾销
+贸易战
 
-# 外贸平台和电商
-阿里巴巴 Alibaba Made-in-China Global Sources +平台
-亚马逊 速卖通 eBay +跨境 +电商
 
-# 汇率和支付
-汇率 美元 人民币 +波动
-PayPal 西联汇款 +支付 !广告
+物流运输
+海运费
+货代 
+集装箱 +涨价 +下跌
+马士基 中远海运 +运费
 
-# AI工具核心
-人工智能 ChatGPT Claude DeepSeek +工具 +功能
-OpenAI Anthropic +更新 +发布
+阿里巴巴
+Alibaba 
+Made-in-China 
+Global Sources
+亚马逊 
+速卖通 
+eBay
 
-# AI应用场景
+
+汇率
+美元
+人民币
+PayPal 
+西联汇款
+
+
+人工智能
+ChatGPT
+Claude 
+DeepSeek 
+OpenAI 
+Anthropic +更新 +发布
+
+
 AI +客服 +翻译 +营销
-智能 +写作 +分析 !培训
+智能 +写作 +分析
 
-# 制造业相关
-OEM ODM 代工 +制造 +工厂
+
+OEM 
+ODM 
+代工
 供应链 +短缺 +恢复
 
-# 认证和合规
-CE认证 FDA ISO +认证 +标准
+
+CE认证
+FDA 
+ISO +认证 +标准
 验厂 合规 +要求
